@@ -10,4 +10,4 @@ class App extends React.Component {
     }
 }
 
-ReactDOM.render(<App contacts={contacts} />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));
