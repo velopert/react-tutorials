@@ -2,8 +2,6 @@
 
 This repository has some sample ReactJS projects that are used from the tutorials in [Velopert Blog](http://velopert.com) (KOREAN)
 
-- 01-react-tryout :
-- :
 
 | Directory        | Blog Post  |
 | ------------- |-------------|
