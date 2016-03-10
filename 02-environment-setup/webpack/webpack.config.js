@@ -11,17 +11,18 @@ module.exports = {
         port: 7777
     },
 
-    module: {
-            loaders: [
-                {
-                    test: /\.js$/,
-                    loader: 'babel',
-                    exclude: /node_modules/,
-                    query: {
-                        cacheDirectory: true,
-                        presets: ['es2015', 'react']
-                    }
+    module:
+    {
+        loaders: [
+            {
+                test: /\.js$/,
+                loader: 'babel',
+                exclude: /node_modules/,
+                query: {
+                    cacheDirectory: true,
+                    presets: ['es2015', 'react']
                 }
-            ]
-        }
+            }
+        ]
+    }
 };
