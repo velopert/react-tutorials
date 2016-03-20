@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Header from './Header';
 
 class App extends React.Component {
     render(){
@@ -12,15 +13,7 @@ class App extends React.Component {
     }
 }
 
-class Header extends React.Component{
-    render(){
-        return (
-            <h1>Header</h1>
-        );
-    }
-}
-
-class Content extends React.Component{
+class Content extends React.Component {
     render(){
         return (
             <div>
@@ -30,7 +23,5 @@ class Content extends React.Component{
         );
     }
 }
-
-
 
 ReactDOM.render(<App />, document.getElementById('app'));
