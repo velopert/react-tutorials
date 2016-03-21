@@ -17,8 +17,8 @@ class App extends React.Component {
 
 App.defaultProps = {
     headerTitle: 'Default header',
-    contentTitle: 5,
-    contentBody: undefined
+    contentTitle: 'Default contentTitle',
+    contentBody: 'Default contentBody'
 };
 
 ReactDOM.render(<App/>, document.getElementById('app'));
