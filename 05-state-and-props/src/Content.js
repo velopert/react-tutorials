@@ -12,9 +12,4 @@ class Content extends React.Component {
     }
 }
 
-Content.propTypes = {
-    title: React.PropTypes.number.isRequired,
-    body: React.PropTypes.number
-};
-
 export default Content;
