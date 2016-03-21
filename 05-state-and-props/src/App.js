@@ -8,7 +8,7 @@ class App extends React.Component {
         return  (
             <div>
                 <Header title={ this.props.headerTitle }/>
-                <Content title={ this.props.contentTitle }
+                <Content
                           body={ this.props.contentBody }/>
             </div>
         );
