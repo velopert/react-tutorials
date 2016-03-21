@@ -13,14 +13,12 @@ class App extends React.Component {
             </div>
         );
     }
-
-    getDefaultProps(){
-        return{
-            headerTitle: 'Default header',
-            contentTitle: 'Default contentTitle',
-            contentBody: 'Default contentBody'
-        };
-    }
 }
+
+App.defaultProps = {
+    headerTitle: 'Default header',
+    contentTitle: 'Default contentTitle',
+    contentBody: 'Default contentBody'
+};
 
 ReactDOM.render(<App />, document.getElementById('app'));
