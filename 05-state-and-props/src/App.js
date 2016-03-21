@@ -21,4 +21,4 @@ App.defaultProps = {
     contentBody: 'Default contentBody'
 };
 
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App contentTitle={5} contentBody={undefined} />, document.getElementById('app'));
