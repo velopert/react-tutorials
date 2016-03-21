@@ -14,7 +14,7 @@ class Content extends React.Component {
 
 Content.propTypes = {
     title: React.PropTypes.string,
-    body: React.PropTypes.number.isRequired
+    body: React.PropTypes.number
 };
 
 export default Content;
