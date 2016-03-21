@@ -13,7 +13,7 @@ class Content extends React.Component {
 }
 
 Content.propTypes = {
-    title: React.PropTypes.string,
+    title: React.PropTypes.number.isRequired,
     body: React.PropTypes.number
 };
 
