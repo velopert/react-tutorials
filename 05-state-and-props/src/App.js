@@ -9,7 +9,7 @@ class App extends React.Component {
             <div>
                 <Header title={ this.props.headerTitle }/>
                 <Content title={ this.props.contentTitle }
-                          body={ undefined }/>
+                          body={ this.props.contentBody }/>
             </div>
         );
     }
@@ -17,8 +17,8 @@ class App extends React.Component {
 
 App.defaultProps = {
     headerTitle: 'Default header',
-    contentTitle: 'Default contentTitle',
-    contentBody: 'Default contentBody'
+    contentTitle: 5,
+    contentBody: undefined
 };
 
-ReactDOM.render(<App contentTitle={5}/>, document.getElementById('app'));
+ReactDOM.render(<App/>, document.getElementById('app'));
