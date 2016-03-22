@@ -2,16 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 class RandomNumber extends React.Component {
+
+
     constructor(props){
         super(props);
-        _update.bind(this);
+        _update = () => {
+            console.log(this.props.number);
+        };
     }
 
-    _update(){
-        let value = Math.round(Math.random() * 100);
-        console.log(this.props.number);
-        //this.props.onUpdate(value);
-    }
 
     render(){
         return (
