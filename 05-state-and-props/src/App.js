@@ -13,7 +13,7 @@ class App extends React.Component {
             value: Math.round(Math.random()*100)
         };
     }
-    
+
     _updateValue(randomValue){
         this.setState({
             value: randomValue
@@ -27,7 +27,7 @@ class App extends React.Component {
                 <Content title={ this.props.contentTitle }
                           body={ this.props.contentBody }/>
                       <RandomNumber number={this.state.value}
-                                  onUpdate={this._updateValue} />
+                                  onUpdate={this._updateValue.bind(this)} />
             </div>
         );
     }
