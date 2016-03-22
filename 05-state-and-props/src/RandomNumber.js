@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+function _update(){
+    console.log("FUCK THAT");
+    console.log(this.props.number);
+}
 class RandomNumber extends React.Component {
 
     constructor(props){
         super(props);
-        this._update = function(){
-            console.log("FUCK THAT");
-            console.log(this.props.number);
-        };
+        _update.bind(this);
     }
 
 
