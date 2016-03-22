@@ -12,7 +12,6 @@ class RandomNumber extends React.Component {
 
     constructor(props){
         super(props);
-        _update.bind(this);
     }
 
 
