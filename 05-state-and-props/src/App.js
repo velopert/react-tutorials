@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './Header';
 import Content from './Content';
+import RandomNumber from './RandomNumber';
 
 class App extends React.Component {
 
