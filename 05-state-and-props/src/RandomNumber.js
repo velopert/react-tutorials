@@ -5,7 +5,7 @@ class RandomNumber extends React.Component {
     _randomize(){
         let value = Math.round(Math.random() * 100);
         console.log(this.props.number);
-        this.props.onUpdate(value);
+        //this.props.onUpdate(value);
     }
 
     render(){
