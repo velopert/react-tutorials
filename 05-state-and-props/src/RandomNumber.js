@@ -6,9 +6,6 @@ class RandomNumber extends React.Component {
 
     constructor(props){
         super(props);
-        _update = () => {
-            console.log(this.props.number);
-        };
     }
 
 
