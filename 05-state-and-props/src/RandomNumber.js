@@ -7,7 +7,7 @@ class RandomNumber extends React.Component {
 
 
     _update(){
-            console.log("FUCK");
+            console.log(this.props.number);
     }
 
     constructor(props){
