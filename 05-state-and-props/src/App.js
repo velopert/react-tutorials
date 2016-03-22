@@ -13,6 +13,7 @@ class App extends React.Component {
             value: Math.round(Math.random()*100)
         };
     }
+    
     _updateValue(randomValue){
         this.setState({
             value: randomValue
