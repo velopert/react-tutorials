@@ -16,7 +16,7 @@ class RandomNumber extends React.Component {
         return (
             <div>
                 <h1>RANDOM NUMBER: { this.props.number }</h1>
-                <button onClick={this._update}>Randomize</button>
+                <button>Randomize</button>
             </div>
         );
     }
