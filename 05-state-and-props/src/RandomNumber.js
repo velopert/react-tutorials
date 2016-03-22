@@ -7,7 +7,8 @@ class RandomNumber extends React.Component {
 
 
     _update(){
-            console.log(this.props.number);
+        let value = Math.round(Math.random()*100);
+        this.props.onUpdate(value);
     }
 
     constructor(props){
