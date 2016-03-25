@@ -23,6 +23,14 @@ class Contacts extends React.Component {
         };
     }
 
+    insertContact(name, phone){
+        let newState = React.addons.update(this.state, {
+            contactData: {
+                $push: [{"name": name, "phone": phone}]
+            }
+        });
+    }
+
 
     render(){
         return(
@@ -35,7 +43,7 @@ class Contacts extends React.Component {
                                               key={i}/>);
                     })}
                 </ul>
-                <ContactCreator onUpdate={(a,b) => alert(a + "" + b)}/>
+                <ContactCreator onInsert={(a,b) => alert(a + "" + b)}/>
             </div>
         );
     }
@@ -60,7 +68,7 @@ class ContactCreator extends React.Component {
     }
 
     handleClick(){
-        this.props.onUpdate(this.state.name, this.state.phone);
+        this.props.onInsert(this.state.name, this.state.phone);
     }
 
     handleChange(e){
