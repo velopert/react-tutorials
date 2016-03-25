@@ -51,6 +51,14 @@ class ContactInfo extends React.Component {
 }
 
 class ContactCreator extends React.Component {
+    constructor(props) {
+        super(constructor);
+        this.state = {
+            name: "",
+            phone: ""
+        };
+    }
+
     render() {
         return (
             <div>
