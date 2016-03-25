@@ -59,6 +59,10 @@ class ContactCreator extends React.Component {
         };
     }
 
+    handleClick(){
+        alert(this.state.name);
+    }
+
     handleChange(e){
         var nextState = {};
         nextState[e.target.name] = e.target.value;
@@ -81,7 +85,7 @@ class ContactCreator extends React.Component {
                         placeholder="phone"
                         value={this.state.phone}
                         onChange={this.handleChange.bind(this)}/>
-                    <button>
+                    <button onClick={this.handleClick.bind(this)}>
                     Insert
                     </button>
                 </p>
