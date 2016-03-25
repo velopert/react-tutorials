@@ -43,7 +43,7 @@ class Contacts extends React.Component {
                                               key={i}/>);
                     })}
                 </ul>
-                <ContactCreator onInsert={_insertContact.bind(this)}/>
+                <ContactCreator onInsert={this._insertContact.bind(this)}/>
             </div>
         );
     }
