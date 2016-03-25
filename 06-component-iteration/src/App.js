@@ -59,12 +59,18 @@ class ContactCreator extends React.Component {
         };
     }
 
+    handleChange(e){
+        var nextState = {};
+        nextState[e.target.name] = e.target.value;
+        this.setState(nextState);
+    }
+
     render() {
         return (
             <div>
                 <p>
-                    <input type="text" placeholder="name" value={this.state.name}/>
-                    <input type="text" placeholder="phone" value={this.state.phone}/>
+                    <input type="text" name="name" placeholder="name" value={this.state.name}/>
+                    <input type="text" name="phone" placeholder="phone" value={this.state.phone}/>
                     <button>
                     Insert
                     </button>
