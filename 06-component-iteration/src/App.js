@@ -66,6 +66,7 @@ class ContactCreator extends React.Component {
     handleChange(e){
         var nextState = {};
         nextState[e.target.name] = e.target.value;
+        this.setState(nextState);
     }
 
     render() {
