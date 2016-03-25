@@ -55,8 +55,8 @@ class ContactCreator extends React.Component {
         return (
             <div>
                 <p>
-                    <input type="text" placeholder="name"/>
-                    <input type="text" placeholder="phone"/>
+                    <input type="text" placeholder="name" value={this.state.name}/>
+                    <input type="text" placeholder="phone" value={this.state.phone}/>
                     <button>
                     Insert
                     </button>
@@ -65,4 +65,5 @@ class ContactCreator extends React.Component {
         );
     }
 }
+
 ReactDOM.render(<App />, document.getElementById('app'));
