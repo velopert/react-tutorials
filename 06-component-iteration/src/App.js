@@ -44,6 +44,12 @@ class ContactInfo extends React.Component {
             <li>{this.props.name} {this.props.phone}</li>
             );
     }
+
+    componentDidMount() {
+        console.log('I AM MOUNTED!' + this.props);
+    }
+
+
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));
