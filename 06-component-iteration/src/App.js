@@ -33,6 +33,11 @@ class Contacts extends React.Component {
                                               />);
                     })}
                 </ul>
+                <button onClick={
+                        () => this.state.contactData.push({name: "Dummy", phone: "010-0000-0000"})
+                    }>
+                    Insert Dummy
+                </button>
             </div>
         );
     }
