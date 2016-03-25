@@ -23,7 +23,7 @@ class Contacts extends React.Component {
         };
     }
 
-    insertContact(name, phone){
+    _insertContact(name, phone){
         let newState = React.addons.update(this.state, {
             contactData: {
                 $push: [{"name": name, "phone": phone}]
@@ -43,7 +43,7 @@ class Contacts extends React.Component {
                                               key={i}/>);
                     })}
                 </ul>
-                <ContactCreator onInsert={(a,b) => alert(a + "" + b)}/>
+                <ContactCreator onInsert={_insertContact.bind(this)}/>
             </div>
         );
     }
