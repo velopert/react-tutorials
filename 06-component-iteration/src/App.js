@@ -30,8 +30,8 @@ class Contacts extends React.Component {
                     name: "Dummy",
                     phone: "010-0000-0005"
                 })
-            }
-        })
+            };
+        });
     }
 
     render(){
