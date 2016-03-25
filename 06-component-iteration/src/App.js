@@ -29,7 +29,8 @@ class Contacts extends React.Component {
                 <ul>
                     {this.state.contactData.map((contact, i) => {
                         return (<ContactInfo name={contact.name}
-                                            phone={contact.phone}/>);
+                                            phone={contact.phone}
+                                              key={i}/>);
                     })}
                 </ul>
             </div>
