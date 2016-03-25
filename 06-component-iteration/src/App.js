@@ -22,6 +22,12 @@ class Contacts extends React.Component {
             ]
         };
     }
+
+    _insertDummy() {
+    	this.state.contactData.push({name: "Dummy", phone: "010-0000-0005"});
+      this.forceUpdate();
+    }
+
     render(){
         return(
             <div>
@@ -33,16 +39,23 @@ class Contacts extends React.Component {
                                               key={i}/>);
                     })}
                 </ul>
+                <button onClick={this._insertDummy.bind(this)}>Insert Dummy</button>
             </div>
         );
     }
 }
+
 
 class ContactInfo extends React.Component {
     render() {
         return(
             <li>{this.props.name} {this.props.phone}</li>
             );
+    }
+
+    /* RUNS AFTER UPDATE */
+    componentDidUpdate(){
+    	console.log(this.props.name);
     }
 }
 
