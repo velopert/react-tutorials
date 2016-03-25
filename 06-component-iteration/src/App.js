@@ -22,6 +22,11 @@ class Contacts extends React.Component {
             ]
         };
     }
+
+    _insertDummy(){
+        this.state.contactData.push({name: "Dummy", phone: "010-0000-0000"});
+    }
+
     render(){
         return(
             <div>
@@ -33,9 +38,7 @@ class Contacts extends React.Component {
                                               />);
                     })}
                 </ul>
-                <button onClick={
-                        () => this.state.contactData.push({name: "Dummy", phone: "010-0000-0000"})
-                    }>
+                <button onClick={_insertDummy.bind(this)}>
                     Insert Dummy
                 </button>
             </div>
