@@ -38,7 +38,7 @@ class Contacts extends React.Component {
                                               />);
                     })}
                 </ul>
-                <button onClick={_insertDummy.bind(this)}>
+                <button onClick={this._insertDummy.bind(this)}>
                     Insert Dummy
                 </button>
             </div>
@@ -54,7 +54,7 @@ class ContactInfo extends React.Component {
     }
 
     componentDidMount() {
-        console.log('I AM MOUNTED!' + this.props);
+        console.log('I AM MOUNTED! ' + this.props.name);
     }
 
 
