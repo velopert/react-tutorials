@@ -25,7 +25,7 @@ class Contacts extends React.Component {
     }
 
     _insertContact(name, phone){
-        let newState = React.addons.update(this.state, {
+        let newState = ReactUpdate.update(this.state, {
             contactData: {
                 $push: [{"name": name, "phone": phone}]
             }
