@@ -23,16 +23,6 @@ class Contacts extends React.Component {
         };
     }
 
-    _insertDummy() {
-        this.setState((state) => {
-            return {
-                contactData: state.contactData.concat({
-                    name: "Dummy",
-                    phone: "010-0000-0005"
-                })
-            };
-        });
-    }
 
     render(){
         return(
@@ -45,7 +35,7 @@ class Contacts extends React.Component {
                                               key={i}/>);
                     })}
                 </ul>
-                <button onClick={this._insertDummy.bind(this)}>Insert Dummy</button>
+                <ContactCreator/>
             </div>
         );
     }
@@ -58,11 +48,21 @@ class ContactInfo extends React.Component {
             <li>{this.props.name} {this.props.phone}</li>
             );
     }
-
-    /* RUNS AFTER UPDATE */
-    componentDidUpdate(){
-    	console.log(this.props.name);
-    }
 }
 
+class ContactCreator extends React.Component {
+    render() {
+        return (
+            <div>
+                <p>
+                    <input type="text" placeholder="name"/>
+                    <input type="text" placeholder="phone"/>
+                    <button>
+                    Insert
+                    </button>
+                </p>
+            </div>
+        );
+    }
+}
 ReactDOM.render(<App />, document.getElementById('app'));
