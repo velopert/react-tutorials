@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ReactUpdate from 'react-addons-update';
+import ReactUpdate from 'react-addons';
 
 class App extends React.Component {
     render(){
