@@ -35,7 +35,7 @@ class Contacts extends React.Component {
                                               key={i}/>);
                     })}
                 </ul>
-                <ContactCreator/>
+                <ContactCreator onUpdate={(a,b) => alert(a + "" + b)}/>
             </div>
         );
     }
@@ -60,14 +60,12 @@ class ContactCreator extends React.Component {
     }
 
     handleClick(){
-        alert(this.state.name);
+        this.props.onUpdate(this.state.name, this.state.phone);
     }
 
     handleChange(e){
         var nextState = {};
         nextState[e.target.name] = e.target.value;
-        this.setState(nextState);
-        console.log(this.state.name);
     }
 
     render() {
