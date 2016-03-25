@@ -29,6 +29,7 @@ class Contacts extends React.Component {
                 $push: [{"name": name, "phone": phone}]
             }
         });
+        this.setState(newState);
     }
 
 
