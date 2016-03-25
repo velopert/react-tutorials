@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import immutabilityHelpers from 'react-addons-update';
+import update from 'react-addons-update';
 
 class App extends React.Component {
     render(){
@@ -25,7 +25,7 @@ class Contacts extends React.Component {
     }
 
     _insertContact(name, phone){
-        let newState = immutabilityHelpers.update(this.state, {
+        let newState = update(this.state, {
             contactData: {
                 $push: [{"name": name, "phone": phone}]
             }
