@@ -24,8 +24,12 @@ class Contacts extends React.Component {
     }
 
     _insertDummy() {
-    	this.state.contactData.push({name: "Dummy", phone: "010-0000-0005"});
-      this.forceUpdate();
+        this.setState({
+            contactData: this.state.contactData.concat({
+                name: "Dummy",
+                phone: "010-0000-0005"
+            })
+        })
     }
 
     render(){
