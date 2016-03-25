@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ReactAddons from 'react/addons';
 
 class App extends React.Component {
     render(){
