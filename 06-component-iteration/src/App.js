@@ -42,11 +42,11 @@ class Contacts extends React.Component {
             });
             return;
         }
-        
+
         this.setState({
             selectedKey: key
         });
-        console.log(key + "is selected");
+        console.log(key + " is selected");
     }
 
     _isSelected(key){
