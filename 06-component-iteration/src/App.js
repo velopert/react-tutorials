@@ -20,7 +20,8 @@ class Contacts extends React.Component {
                 {name: "Betty", phone: "010-0000-0002"},
                 {name: "Charlie", phone: "010-0000-0003"},
                 {name: "David", phone: "010-0000-0004"}
-            ]
+            ],
+            selectedKey: -1
         };
     }
 
@@ -33,6 +34,20 @@ class Contacts extends React.Component {
         this.setState(newState);
     }
 
+    _itemClicked(key){
+        this.setState({
+            selectedKey: key
+        });
+    }
+
+    _isSelected(key){
+        if(this.state.selectedKey == key){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 
     render(){
         return(
@@ -42,7 +57,8 @@ class Contacts extends React.Component {
                     {this.state.contactData.map((contact, i) => {
                         return (<ContactInfo name={contact.name}
                                             phone={contact.phone}
-                                              key={i}/>);
+                                              key={i}
+                                       isSelected={_isSelected(i)}/>);
                     })}
                 </ul>
                 <ContactCreator onInsert={this._insertContact.bind(this)}/>
@@ -53,9 +69,14 @@ class Contacts extends React.Component {
 
 
 class ContactInfo extends React.Component {
+
+    handleClick(){
+        this.props.itemSelected(this.props.key);
+    }
+
     render() {
         return(
-            <li>{this.props.name} {this.props.phone}</li>
+            <li onClick={handleClick.bind(this)}>{this.props.name} {this.props.phone} {this.props.isSelected}</li>
             );
     }
 }
