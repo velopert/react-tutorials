@@ -79,7 +79,7 @@ class ContactInfo extends React.Component {
 
     render() {
         return(
-            <li onClick={this.handleClick.bind(this)}>{this.props.name}{this.props.key} {this.props.phone} {this.props.isSelected}</li>
+            <li onClick={this.handleClick.bind(this)}>{this.props.name}{this.key} {this.props.phone} {this.props.isSelected}</li>
             );
     }
 }
