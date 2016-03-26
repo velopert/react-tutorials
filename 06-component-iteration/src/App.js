@@ -89,7 +89,7 @@ class ContactInfo extends React.Component {
     render() {
 
         let getStyle = isSelect => {
-            if(!isSelect) return {};
+            if(!isSelect) return;
 
             let style = {
                 backgroundColor: '#52cdb3'
