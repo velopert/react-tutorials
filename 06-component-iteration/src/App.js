@@ -63,6 +63,7 @@ class ContactInfo extends React.Component {
 class ContactCreator extends React.Component {
     constructor(props) {
         super(constructor);
+        // Configure default state
         this.state = {
             name: "",
             phone: ""
