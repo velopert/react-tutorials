@@ -58,7 +58,7 @@ class Contacts extends React.Component {
                         return (<ContactInfo name={contact.name}
                                             phone={contact.phone}
                                               key={i}
-                                       isSelected={this._isSelected(i).bind(this)}/>);
+                                       isSelected={this._isSelected.bind(this)(i)}/>);
                     })}
                 </ul>
                 <ContactCreator onInsert={this._insertContact.bind(this)}/>
