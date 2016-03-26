@@ -74,7 +74,8 @@ class Contacts extends React.Component {
 class ContactInfo extends React.Component {
 
     handleClick(){
-        console.log(this.props.contactKey);
+        this.props.onSelect(this.props.contactKey);
+
     }
 
     render() {
