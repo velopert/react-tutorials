@@ -38,6 +38,7 @@ class Contacts extends React.Component {
         this.setState({
             selectedKey: key
         });
+        console.log(key + "is selected");
     }
 
     _isSelected(key){
