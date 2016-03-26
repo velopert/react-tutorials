@@ -92,7 +92,8 @@ class ContactInfo extends React.Component {
             if(!isSelect) return;
 
             let style = {
-                backgroundColor: '#52cdb3'
+                backgroundColor: '#4efcd8',
+                color: 'white'
             };
 
             return style;
