@@ -35,6 +35,14 @@ class Contacts extends React.Component {
     }
 
     _onSelect(key){
+        if(key==this.state.selectedKey){
+            console.log("key select cancelled");
+            this.setState({
+                selectedKey: -1
+            });
+            return;
+        }
+        
         this.setState({
             selectedKey: key
         });
