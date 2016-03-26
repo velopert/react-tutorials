@@ -72,6 +72,10 @@ class ContactCreator extends React.Component {
 
     handleClick(){
         this.props.onInsert(this.state.name, this.state.phone);
+        this.setState({
+            name: "",
+            phone: ""
+        });
     }
 
     handleChange(e){
