@@ -34,7 +34,7 @@ class Contacts extends React.Component {
         this.setState(newState);
     }
 
-    _itemClicked(key){
+    _onSelect(key){
         this.setState({
             selectedKey: key
         });
@@ -42,9 +42,9 @@ class Contacts extends React.Component {
 
     _isSelected(key){
         if(this.state.selectedKey == key){
-            return true;
+            return "true";
         }else{
-            return false;
+            return "false";
         }
     }
 
@@ -58,7 +58,8 @@ class Contacts extends React.Component {
                         return (<ContactInfo name={contact.name}
                                             phone={contact.phone}
                                               key={i}
-                                       isSelected={this._isSelected.bind(this)(i)}/>);
+                                       isSelected={this._isSelected.bind(this)(i)}
+                                       onSelect={this._onSelect.bind(this)}/>);
                     })}
                 </ul>
                 <ContactCreator onInsert={this._insertContact.bind(this)}/>
@@ -71,7 +72,7 @@ class Contacts extends React.Component {
 class ContactInfo extends React.Component {
 
     handleClick(){
-        this.props.itemSelected(this.props.key);
+        this.props.onSelect(this.props.key);
     }
 
     render() {
