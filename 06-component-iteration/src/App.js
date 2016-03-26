@@ -99,7 +99,7 @@ class ContactInfo extends React.Component {
         };
 
         return(
-            <li style={getStyle()} onClick={this.handleClick.bind(this)}>{this.props.name} {this.props.phone} {this.props.isSelected}</li>
+            <li style={getStyle(this.props.isSelected)} onClick={this.handleClick.bind(this)}>{this.props.name} {this.props.phone} {this.props.isSelected}</li>
             );
     }
 }
