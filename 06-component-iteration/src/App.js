@@ -74,6 +74,7 @@ class ContactInfo extends React.Component {
 
     handleClick(){
         this.props.onSelect(this.props.key);
+        console.log(this.props.key);
     }
 
     render() {
