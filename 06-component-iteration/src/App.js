@@ -51,9 +51,9 @@ class Contacts extends React.Component {
 
     _isSelected(key){
         if(this.state.selectedKey == key){
-            return "true";
+            return true;
         }else{
-            return "false";
+            return false;
         }
     }
 
@@ -88,7 +88,7 @@ class ContactInfo extends React.Component {
 
     render() {
 
-        /*let getStyle = isSelect => {
+        let getStyle = isSelect => {
             if(!isSelect) return {};
 
             let style = {
@@ -96,14 +96,10 @@ class ContactInfo extends React.Component {
             };
 
             return style;
-        };*/
-
-        let style ={
-            color: 'aqua'
         };
 
         return(
-            <li style={style} onClick={this.handleClick.bind(this)}>{this.props.name} {this.props.phone} {this.props.isSelected}</li>
+            <li style={getStyle()} onClick={this.handleClick.bind(this)}>{this.props.name} {this.props.phone} {this.props.isSelected}</li>
             );
     }
 }
