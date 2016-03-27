@@ -75,6 +75,24 @@ class Contacts extends React.Component {
         });
     }
 
+    _getSelectedContact(){
+        if(this.state.selectedKey==-1){
+            return {
+                name: "",
+                phone: ""
+            };
+        }
+
+        return this.state.contactData[key];
+    }
+
+    _editContact(name, phone){
+        console.log(name);
+        console.log(phone);
+
+    }
+
+
 
     render(){
         return(
@@ -92,7 +110,9 @@ class Contacts extends React.Component {
                 </ul>
                 <ContactCreator onInsert={this._insertContact.bind(this)}/>
                 <ContactRemover onRemove={this._removeContact.bind(this)}/>
-            </div>
+                <ContactEditor onEdit={this._editContact.bind(this)}
+                              contact={this._getSelectedContact.bind(this)()}/>
+        </div>
         );
     }
 }
@@ -189,4 +209,53 @@ class ContactRemover extends React.Component {
     }
 
 }
+
+class ContactEditor extends React.Component {
+    constructor(props) {
+        super(constructor);
+        // Configure default state
+        this.state = {
+            name: props.contact.name,
+            phone: props.contact.phone
+        };
+    }
+
+    handleClick(){
+        this.props.onEdit(this.state.name, this.state.phone);
+        this.setState({
+            name: "",
+            phone: ""
+        });
+    }
+
+    handleChange(e){
+        var nextState = {};
+        nextState[e.target.name] = e.target.value;
+        this.setState(nextState);
+    }
+
+    render() {
+        return (
+            <div>
+                <p>
+                    <input type="text"
+                        name="name"
+                        placeholder="name"
+                        value={this.state.name}
+                        onChange={this.handleChange.bind(this)}/>
+
+                    <input type="text"
+                        name="phone"
+                        placeholder="phone"
+                        value={this.state.phone}
+                        onChange={this.handleChange.bind(this)}/>
+                    <button onClick={this.handleClick.bind(this)}>
+                    Insert
+                    </button>
+                </p>
+            </div>
+        );
+    }
+}
+
 ReactDOM.render(<App />, document.getElementById('app'));
