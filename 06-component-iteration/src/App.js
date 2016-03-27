@@ -87,15 +87,27 @@ class Contacts extends React.Component {
     _editContact(name, phone){
         console.log(name);
         console.log(phone);
-        this.setState(update(
+        /* this.setState(contactData: update(
             this.state.contactData,
             {
-                1 :{
+                this.state.selectedKey :{
                     name: { $set: name },
                     phone: { $set: phone }
                 }
             }
-        ));
+        )); */
+
+        this.setState({
+            contactData: update(
+                this.state.contactData,
+                {
+                    [this.state.selectedKey]: {
+                        name: { $set: name },
+                        phone: { $set: phone }
+                    }
+                }
+            )
+        });
     }
 
 
