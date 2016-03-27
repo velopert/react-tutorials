@@ -90,7 +90,7 @@ class Contacts extends React.Component {
         this.setState(update(
             this.state.contactData,
             {
-                [this.state.selectedKey]:{
+                1 :{
                     name: { $set: name },
                     phone: { $set: phone }
                 }
