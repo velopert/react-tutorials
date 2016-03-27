@@ -56,7 +56,6 @@ class Contacts extends React.Component {
             selectedKey: key,
             selected: this.state.contactData[key]
         });
-        this.forceUpdate();
         console.log(key + " is selected");
     }
 
@@ -251,6 +250,7 @@ class ContactEditor extends React.Component {
                     <button onClick={this.handleClick.bind(this)}>
                     Insert
                     </button>
+                    {this.props.contact.name} {this.props.contact.phone}
                 </p>
             </div>
         );
