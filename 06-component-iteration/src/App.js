@@ -121,7 +121,8 @@ class Contacts extends React.Component {
                 <ContactCreator onInsert={this._insertContact.bind(this)}/>
                 <ContactRemover onRemove={this._removeContact.bind(this)}/>
                 <ContactEditor onEdit={this._editContact.bind(this)}
-                              contact={this.state.selected}/>
+                              contact={this.state.selected}
+                              isSelected={(this.state.selectedKey != -1)}/>
         </div>
         );
     }
@@ -231,6 +232,11 @@ class ContactEditor extends React.Component {
     }
 
     handleClick(){
+        if(!this.props.isSelected){
+            console.log("contact not selected");
+            return;
+        }
+
         this.props.onEdit(this.state.name, this.state.phone);
         this.setState({
             name: "",
