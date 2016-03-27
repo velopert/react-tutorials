@@ -206,7 +206,6 @@ class ContactCreator extends React.Component {
 }
 
 class ContactRemover extends React.Component {
-
     handleClick() {
         this.props.onRemove();
     }
@@ -218,7 +217,6 @@ class ContactRemover extends React.Component {
             </button>
         );
     }
-
 }
 
 class ContactEditor extends React.Component {
@@ -239,10 +237,6 @@ class ContactEditor extends React.Component {
         }
 
         this.props.onEdit(this.state.name, this.state.phone);
-        this.setState({
-            name: "",
-            phone: ""
-        });
     }
 
     handleChange(e){
