@@ -213,8 +213,8 @@ class ContactEditor extends React.Component {
         super(constructor);
         // Configure default state
         this.state = {
-            name: props.contact.name,
-            phone: props.contact.phone
+            name: "",
+            phone: ""
         };
     }
 
@@ -230,6 +230,10 @@ class ContactEditor extends React.Component {
         var nextState = {};
         nextState[e.target.name] = e.target.value;
         this.setState(nextState);
+    }
+
+    componentDidUpdate(){
+        console.log("FUCK");
     }
 
     render() {
