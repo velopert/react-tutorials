@@ -22,7 +22,7 @@ class Contacts extends React.Component {
                 {name: "David", phone: "010-0000-0004"}
             ],
             selectedKey: -1,
-            selcted: {
+            selected: {
                 name: "",
                 phone: ""
             }
