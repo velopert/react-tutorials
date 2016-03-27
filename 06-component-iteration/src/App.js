@@ -234,8 +234,6 @@ class ContactEditor extends React.Component {
 
     componentDidUpdate(){
         if(JSON.stringify(this.state) != JSON.stringify(this.props.contact)){
-            console.log(JSON.stringify(this.props.contact));
-            console.log(JSON.stringify(this.state));
             this.setState({
                 name: this.props.contact.name,
                 phone: this.props.contact.phone
