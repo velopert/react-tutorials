@@ -56,7 +56,7 @@ class Contacts extends React.Component {
             selectedKey: key,
             selected: this.state.contactData[key]
         });
-
+        forceUpdate();
         console.log(key + " is selected");
     }
 
