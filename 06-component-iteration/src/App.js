@@ -74,6 +74,7 @@ class Contacts extends React.Component {
                     })}
                 </ul>
                 <ContactCreator onInsert={this._insertContact.bind(this)}/>
+                <ContactRemover/>
             </div>
         );
     }
@@ -159,7 +160,7 @@ class ContactCreator extends React.Component {
 class ContactRemover extends React.Component {
     render() {
         return (
-            <div></div>
+            <button>Remove selected contact</button>
         );
     }
 
