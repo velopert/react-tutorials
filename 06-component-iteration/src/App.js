@@ -58,6 +58,23 @@ class Contacts extends React.Component {
         }
     }
 
+    _removeContact(){
+        if(this.state.selectedKey==-1){
+            console.log("contact not selected");
+            return;
+        }
+
+        this.setState({
+            contactData: update(
+                this.state.contactData,
+                {
+                    $splice: [[this.state.selectedKey, 1]]
+                }
+            ),
+            selectedKey: -1
+        });
+    }
+
 
     render(){
         return(
@@ -74,7 +91,7 @@ class Contacts extends React.Component {
                     })}
                 </ul>
                 <ContactCreator onInsert={this._insertContact.bind(this)}/>
-                <ContactRemover/>
+                <ContactRemover onRemove={this._removeContact.bind(this)}/>
             </div>
         );
     }
@@ -158,9 +175,16 @@ class ContactCreator extends React.Component {
 }
 
 class ContactRemover extends React.Component {
+
+    handleClick() {
+        this.props.onRemove();
+    }
+
     render() {
         return (
-            <button>Remove selected contact</button>
+            <button onClick={this.handleClick.bind(this)}>
+                Remove selected contact
+            </button>
         );
     }
 
