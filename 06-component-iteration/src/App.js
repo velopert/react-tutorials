@@ -34,6 +34,7 @@ class Contacts extends React.Component {
         this.setState(newState);
     }
 
+   
     _onSelect(key){
         if(key==this.state.selectedKey){
             console.log("key select cancelled");
@@ -154,5 +155,4 @@ class ContactCreator extends React.Component {
         );
     }
 }
-
 ReactDOM.render(<App />, document.getElementById('app'));
