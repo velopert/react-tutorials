@@ -69,7 +69,7 @@ class Contacts extends React.Component {
                                               key={i}
                                        contactKey={i}
                                        isSelected={this._isSelected.bind(this)(i)}
-                                       onSelect={this._onSelect.bind(this)}/>);
+                                         onSelect={this._onSelect.bind(this)}/>);
                     })}
                 </ul>
                 <ContactCreator onInsert={this._insertContact.bind(this)}/>
@@ -83,7 +83,6 @@ class ContactInfo extends React.Component {
 
     handleClick(){
         this.props.onSelect(this.props.contactKey);
-
     }
 
     render() {
@@ -100,8 +99,11 @@ class ContactInfo extends React.Component {
         };
 
         return(
-            <li style={getStyle(this.props.isSelected)} onClick={this.handleClick.bind(this)}>{this.props.name} {this.props.phone} {this.props.isSelected}</li>
-            );
+            <li style={getStyle(this.props.isSelected)}
+                onClick={this.handleClick.bind(this)}>
+                {this.props.name} {this.props.phone}
+            </li>
+        );
     }
 }
 
