@@ -94,7 +94,11 @@ class Contacts extends React.Component {
                         phone: { $set: phone }
                     }
                 }
-            )
+            ),
+            selected: {
+                name: name,
+                phone: phone
+            }
         });
     }
 
