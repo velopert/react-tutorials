@@ -234,6 +234,7 @@ class ContactEditor extends React.Component {
     handleClick(){
         if(!this.props.isSelected){
             console.log("contact not selected");
+
             return;
         }
 
@@ -273,7 +274,7 @@ class ContactEditor extends React.Component {
                         value={this.state.phone}
                         onChange={this.handleChange.bind(this)}/>
                     <button onClick={this.handleClick.bind(this)}>
-                    Insert
+                        Edit
                     </button>
                 </p>
             </div>
