@@ -232,7 +232,7 @@ class ContactEditor extends React.Component {
         this.setState(nextState);
     }
 
-    componentDidUpdate(){
+    componentWillUpdate(){
         console.log("FUCK");
         if(this.state.name != this.props.contact.name ||
         this.state.phone != this.props.contact.phone){
