@@ -39,14 +39,20 @@ class Contacts extends React.Component {
         if(key==this.state.selectedKey){
             console.log("key select cancelled");
             this.setState({
-                selectedKey: -1
+                selectedKey: -1,
+                selected: {
+                    name: "",
+                    phone: ""
+                }
             });
             return;
         }
 
         this.setState({
-            selectedKey: key
+            selectedKey: key,
+            selected: this.state.contactData[key]
         });
+
         console.log(key + " is selected");
     }
 
@@ -75,17 +81,6 @@ class Contacts extends React.Component {
         });
     }
 
-    _getSelectedContact(){
-        if(this.state.selectedKey==-1){
-            return {
-                name: "",
-                phone: ""
-            };
-        }
-
-        return this.state.contactData[this.state.selectedKey];
-    }
-
     _editContact(name, phone){
         console.log(name);
         console.log(phone);
@@ -111,7 +106,7 @@ class Contacts extends React.Component {
                 <ContactCreator onInsert={this._insertContact.bind(this)}/>
                 <ContactRemover onRemove={this._removeContact.bind(this)}/>
                 <ContactEditor onEdit={this._editContact.bind(this)}
-                              contact={this._getSelectedContact.bind(this)()}/>
+                              contact={this.state.selected}/>
         </div>
         );
     }
