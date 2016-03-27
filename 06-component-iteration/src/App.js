@@ -239,7 +239,8 @@ class ContactEditor extends React.Component {
 
             this.setState({
                 name: this.props.contact.name,
-                phone: this.props.contact.phone
+                phone: this.props.contact.phone,
+                test: "just a test"
             });
 
         }
