@@ -83,7 +83,7 @@ class Contacts extends React.Component {
             };
         }
 
-        return this.state.contactData[key];
+        return this.state.contactData[this.state.selectedKey];
     }
 
     _editContact(name, phone){
