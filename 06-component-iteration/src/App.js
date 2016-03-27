@@ -232,6 +232,7 @@ class ContactEditor extends React.Component {
         this.setState(nextState);
     }
 
+/*
     componentDidUpdate(){
         if(JSON.stringify(this.state) != JSON.stringify(this.props.contact)){
             this.setState({
@@ -240,6 +241,7 @@ class ContactEditor extends React.Component {
             });
         }
     }
+*/
 
     render() {
         return (
