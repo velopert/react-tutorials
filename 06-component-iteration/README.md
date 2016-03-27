@@ -1,2 +1,3 @@
 # React Component Iteration thru Mapping & Data Modification
-<iframe width="100%" height="350" src="http://jsfiddle.net/velopert/k21ozagp/17/embedded/result,js,html/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+[![Image](https://raw.githubusercontent.com/velopert/react-tutorials/master/06-component-iteration/preview.png)](https://jsfiddle.net/velopert/k21ozagp/17/)  
+Click image above to run in **jsFiddle**
