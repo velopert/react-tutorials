@@ -263,7 +263,6 @@ class ContactEditor extends React.Component {
                     <button onClick={this.handleClick.bind(this)}>
                     Insert
                     </button>
-                    {this.props.contact.name} {this.props.contact.phone}
                 </p>
             </div>
         );
