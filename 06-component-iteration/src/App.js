@@ -232,16 +232,12 @@ class ContactEditor extends React.Component {
         this.setState(nextState);
     }
 
-/*
-    componentDidUpdate(){
-        if(JSON.stringify(this.state) != JSON.stringify(this.props.contact)){
-            this.setState({
-                name: this.props.contact.name,
-                phone: this.props.contact.phone
-            });
-        }
+    componentWillReceiveProps(nextProps){
+        this.setState({
+            name: nextProps.contact.name,
+            phone: nextProps.contact.phone
+        });
     }
-*/
 
     render() {
         return (
