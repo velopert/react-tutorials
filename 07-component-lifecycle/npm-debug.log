@@ -7,39 +7,38 @@
 6 silly lifecycle react_tutorial@1.0.0~prestart: no script for prestart, continuing
 7 info lifecycle react_tutorial@1.0.0~start: react_tutorial@1.0.0
 8 verbose lifecycle react_tutorial@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle react_tutorial@1.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/home/vlpt/node_tutorial/react/react-tutorials/04-component/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
-10 verbose lifecycle react_tutorial@1.0.0~start: CWD: /home/vlpt/node_tutorial/react/react-tutorials/04-component
+9 verbose lifecycle react_tutorial@1.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/home/vlpt/node_tutorial/react/react-tutorials/07-component-lifecycle/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+10 verbose lifecycle react_tutorial@1.0.0~start: CWD: /home/vlpt/node_tutorial/react/react-tutorials/07-component-lifecycle
 11 silly lifecycle react_tutorial@1.0.0~start: Args: [ '-c', 'webpack-dev-server --hot --host 0.0.0.0' ]
-12 silly lifecycle react_tutorial@1.0.0~start: Returned: code: 1  signal: null
-13 info lifecycle react_tutorial@1.0.0~start: Failed to exec start script
-14 verbose stack Error: react_tutorial@1.0.0 start: `webpack-dev-server --hot --host 0.0.0.0`
-14 verbose stack Exit status 1
-14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:232:16)
-14 verbose stack     at emitTwo (events.js:100:13)
-14 verbose stack     at EventEmitter.emit (events.js:185:7)
-14 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
-14 verbose stack     at emitTwo (events.js:100:13)
-14 verbose stack     at ChildProcess.emit (events.js:185:7)
-14 verbose stack     at maybeClose (internal/child_process.js:827:16)
-14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
-15 verbose pkgid react_tutorial@1.0.0
-16 verbose cwd /home/vlpt/node_tutorial/react/react-tutorials/04-component
-17 error Linux 3.13.0-71-generic
-18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
-19 error node v5.6.0
-20 error npm  v3.6.0
+12 info lifecycle react_tutorial@1.0.0~start: Failed to exec start script
+13 verbose stack Error: react_tutorial@1.0.0 start: `webpack-dev-server --hot --host 0.0.0.0`
+13 verbose stack spawn ENOENT
+13 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:17:16)
+13 verbose stack     at emitTwo (events.js:100:13)
+13 verbose stack     at ChildProcess.emit (events.js:185:7)
+13 verbose stack     at maybeClose (internal/child_process.js:827:16)
+13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+14 verbose pkgid react_tutorial@1.0.0
+15 verbose cwd /home/vlpt/node_tutorial/react/react-tutorials/07-component-lifecycle
+16 error Linux 3.13.0-71-generic
+17 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "start"
+18 error node v5.6.0
+19 error npm  v3.6.0
+20 error file sh
 21 error code ELIFECYCLE
-22 error react_tutorial@1.0.0 start: `webpack-dev-server --hot --host 0.0.0.0`
-22 error Exit status 1
-23 error Failed at the react_tutorial@1.0.0 start script 'webpack-dev-server --hot --host 0.0.0.0'.
-23 error Make sure you have the latest version of node.js and npm installed.
-23 error If you do, this is most likely a problem with the react_tutorial package,
-23 error not with npm itself.
-23 error Tell the author that this fails on your system:
-23 error     webpack-dev-server --hot --host 0.0.0.0
-23 error You can get information on how to open an issue for this project with:
-23 error     npm bugs react_tutorial
-23 error Or if that isn't available, you can get their info via:
-23 error     npm owner ls react_tutorial
-23 error There is likely additional logging output above.
-24 verbose exit [ 1, true ]
+22 error errno ENOENT
+23 error syscall spawn
+24 error react_tutorial@1.0.0 start: `webpack-dev-server --hot --host 0.0.0.0`
+24 error spawn ENOENT
+25 error Failed at the react_tutorial@1.0.0 start script 'webpack-dev-server --hot --host 0.0.0.0'.
+25 error Make sure you have the latest version of node.js and npm installed.
+25 error If you do, this is most likely a problem with the react_tutorial package,
+25 error not with npm itself.
+25 error Tell the author that this fails on your system:
+25 error     webpack-dev-server --hot --host 0.0.0.0
+25 error You can get information on how to open an issue for this project with:
+25 error     npm bugs react_tutorial
+25 error Or if that isn't available, you can get their info via:
+25 error     npm owner ls react_tutorial
+25 error There is likely additional logging output above.
+26 verbose exit [ 1, true ]
