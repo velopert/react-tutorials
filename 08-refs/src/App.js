@@ -7,7 +7,7 @@ class App extends React.Component {
             <div>
                 <input></input>
                 <button></button>
-Save me
+Save me man
             </div>
         );
     }
