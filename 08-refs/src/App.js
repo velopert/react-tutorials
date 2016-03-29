@@ -7,7 +7,7 @@ class App extends React.Component {
             <div>
                 <input></input>
                 <button></button>
-                FUCK
+                FUCKing SHIT
             </div>
         );
     }
