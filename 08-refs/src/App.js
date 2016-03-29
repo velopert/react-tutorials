@@ -19,3 +19,4 @@ FUCKING SHIT HUH!
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));
+console.log("FUCK");
