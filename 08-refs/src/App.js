@@ -6,7 +6,7 @@ class App extends React.Component {
         return  (
             <div>
                 <input></input>
-                <button>plz</button>
+                <button>plz just save me</button>
 Save me man
             </div>
         );
@@ -14,7 +14,3 @@ Save me man
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));
-
-
-
-
