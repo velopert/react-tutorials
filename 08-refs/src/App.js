@@ -7,6 +7,7 @@ class App extends React.Component {
             <div>
                 <input></input>
                 <button></button>
+                <button></button>
             </div>
         );
     }
