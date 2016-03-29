@@ -7,16 +7,11 @@ class App extends React.Component {
             <div>
                 <input></input>
                 <button></button>
-                FUCKing SHIT no line change no fucka
+                Single Letter
+                FUCK YOU IT DOES NOT WORK
             </div>
         );
     }
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));
-
-
-
-
-
-
