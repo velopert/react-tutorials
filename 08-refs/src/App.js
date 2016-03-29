@@ -7,10 +7,13 @@ class App extends React.Component {
             <div>
                 <input></input>
                 <button></button>
-                FUCKing SHIT no line change no fuck
+                FUCKing SHIT no line change no fucka
             </div>
         );
     }
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));
+
+
+
