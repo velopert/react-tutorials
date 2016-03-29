@@ -6,7 +6,7 @@ class App extends React.Component {
         return  (
             <div>
                 <input></input>
-                <button></button>
+                <button>plz</button>
 Save me man
             </div>
         );
