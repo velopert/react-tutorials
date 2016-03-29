@@ -6,6 +6,9 @@ class App extends React.Component {
         return  (
             <div>
                 <input></input>
+                <div>
+                    <button></button>
+                </div>
             </div>
         );
     }
