@@ -14,3 +14,12 @@ Save me man
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));
+<<<<<<< Updated upstream
+=======
+
+
+
+
+
+
+>>>>>>> Stashed changes
