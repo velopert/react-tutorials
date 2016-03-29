@@ -11,17 +11,8 @@ class App extends React.Component {
 
 
 
+FUCKING SHIT HUH!
 
-
-
-
-
-
-
-
-
-
-                
             </div>
         );
     }
