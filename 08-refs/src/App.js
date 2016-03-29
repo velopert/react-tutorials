@@ -7,11 +7,10 @@ class App extends React.Component {
             <div>
                 <input></input>
                 <button>plz just save me</button>
-I Hate this shitSave me man
+                Its alot to know 
             </div>
         );
     }
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));
-
