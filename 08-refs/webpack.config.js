@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+
 module.exports = {
     entry: './src/App.js',
 
@@ -27,7 +28,4 @@ module.exports = {
         ]
     },
 
-    plugins: [
-        new webpack.HotModuleReplacementPlugin()
-    ]
 };
