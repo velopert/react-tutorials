@@ -29,8 +29,6 @@ class Home extends React.Component {
     }
 }
 
-export default Home;
-
 class About extends React.Component {
     render() {
         return (
@@ -38,8 +36,6 @@ class About extends React.Component {
         );
     }
 }
-
-export default About;
 
 class Articles extends React.Component {
     render() {
@@ -49,7 +45,6 @@ class Articles extends React.Component {
     }
 }
 
-export default Articles;
 
 ReactDOM.render(<Router history = {browserHistory}>
       <Route path = "/" component = {App}>
