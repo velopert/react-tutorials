@@ -6,9 +6,17 @@ class App extends React.Component {
     render(){
 
         return (
-                <h1>Hello React Skeleton!!</h1>
+                <div>
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Articles</li>
+                    </ul>
+                </div>
         );
     }
 }
+
+export default App;
 
 ReactDOM.render(<App />, document.getElementById('app'));
