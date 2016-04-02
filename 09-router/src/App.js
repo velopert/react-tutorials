@@ -9,9 +9,9 @@ class App extends React.Component {
         return (
                 <div>
                     <ul>
-                        <li><Link>Home</Link></li>
-                        <li><Link>About</Link></li>
-                        <li><Link>Articles</Link></li>
+                        <li><Link to="/home">Home</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/articles">Articles</Link></li>
                     </ul>
                     {this.props.children}
                 </div>
@@ -54,8 +54,8 @@ export default Articles;
 ReactDOM.render(<Router history = {browserHistory}>
       <Route path = "/" component = {App}>
          <IndexRoute component = {Home} />
-         <Route path = "home" component = {Home} />
-         <Route path = "about" component = {About} />
-         <Route path = "articles" component = {Articles} />
+         <Route path = "/home" component = {Home} />
+         <Route path = "/about" component = {About} />
+         <Route path = "/articles" component = {Articles} />
       </Route>
    </Router>, document.getElementById('app'));
