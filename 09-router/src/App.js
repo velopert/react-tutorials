@@ -40,7 +40,7 @@ class About extends React.Component {
 class Articles extends React.Component {
     render() {
         return (
-            <h2>Hey, I am ABOUT!</h2>
+            <h2>Hey, I am ARTCILES!</h2>
         );
     }
 }
