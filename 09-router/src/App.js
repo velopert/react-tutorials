@@ -54,8 +54,8 @@ export default Articles;
 ReactDOM.render(<Router history = {browserHistory}>
       <Route path = "/" component = {App}>
          <IndexRoute component = {Home} />
-         <Route path = "/home" component = {Home} />
-         <Route path = "/about" component = {About} />
-         <Route path = "/articles" component = {Articles} />
+         <Route path = "home" component = {Home} />
+         <Route path = "about" component = {About} />
+         <Route path = "articles" component = {Articles} />
       </Route>
    </Router>, document.getElementById('app'));
