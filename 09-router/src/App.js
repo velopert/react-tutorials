@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, Link, browserHistory, IndexRoute, RouteHandler} from 'react-router';
+import { Router, Route, Link, browserHistory, IndexRoute} from 'react-router';
 
 
 class App extends React.Component {
@@ -54,7 +54,7 @@ let routes = (
     </Router>
 );
 
-Router.run(routes, (Handler) => { React.render(<Handler/>, document.body);}); 
+Router.run(routes, (Handler) => { React.render(<Handler/>, document.body);});
 
 
 
