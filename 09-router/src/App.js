@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router';
+import { Router, Route, Link, browserHistory, IndexRoute, RouteHandler} from 'react-router';
 
 
 class App extends React.Component {
@@ -43,7 +43,20 @@ class Articles extends React.Component {
     }
 }
 
+let routes = (
+    <Router history = {browserHistory}>
+          <Route path = "/" component = {App}>
+             <IndexRoute component = {Home} />
+             <Route path = "home" component = {Home} />
+             <Route path = "about" component = {About} />
+             <Route path = "articles" component = {Articles} />
+          </Route>
+    </Router>
+);
 
+Router.run(routes, (Handler) => { React.render(<Handler/>, document.body);});
+
+/*
 ReactDOM.render(<Router history = {browserHistory}>
       <Route path = "/" component = {App}>
          <IndexRoute component = {Home} />
@@ -52,3 +65,4 @@ ReactDOM.render(<Router history = {browserHistory}>
          <Route path = "articles" component = {Articles} />
       </Route>
    </Router>, document.getElementById('app'));
+   */
