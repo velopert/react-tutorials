@@ -43,20 +43,6 @@ class Articles extends React.Component {
     }
 }
 
-let routes = (
-    <Router history = {browserHistory}>
-          <Route path = "/" component = {App}>
-             <IndexRoute component = {Home} />
-             <Route path = "home" component = {Home} />
-             <Route path = "about" component = {About} />
-             <Route path = "articles" component = {Articles} />
-          </Route>
-    </Router>
-);
-
-
-
-
 ReactDOM.render(<Router history = {browserHistory}>
       <Route path = "/" component = {App}>
          <IndexRoute component = {Home} />
@@ -65,4 +51,3 @@ ReactDOM.render(<Router history = {browserHistory}>
          <Route path = "articles" component = {Articles} />
       </Route>
    </Router>, document.getElementById('app'));
-
