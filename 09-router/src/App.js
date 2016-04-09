@@ -54,11 +54,9 @@ let routes = (
     </Router>
 );
 
-Router.run(routes, (Handler) => { React.render(<Handler/>, document.body);});
 
 
 
-/*
 ReactDOM.render(<Router history = {browserHistory}>
       <Route path = "/" component = {App}>
          <IndexRoute component = {Home} />
@@ -67,4 +65,4 @@ ReactDOM.render(<Router history = {browserHistory}>
          <Route path = "articles" component = {Articles} />
       </Route>
    </Router>, document.getElementById('app'));
-   */
+
