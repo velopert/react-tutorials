@@ -13,7 +13,7 @@ class App extends React.Component {
                         <li><Link to="home">Home</Link></li>
                         <li><Link to="about">About</Link></li>
                         <li><Link to="articles">Articles</Link></li>
-                        <li><a href="./articles"/></li>
+                        <li><a href="./articles">Click FUck</a></li>
                     </ul>
                     {this.props.children}
                 </div>
