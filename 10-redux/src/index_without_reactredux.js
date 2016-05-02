@@ -6,7 +6,6 @@ import { createStore } from 'redux';
 /*
  * Action
  */
-
 const INCREMENT = "INCREMENT";
 
 function increase(diff) {
@@ -42,6 +41,9 @@ const counterReducer = (state = initialState, action) => {
  */
 const store = createStore(counterReducer);
 
+/*
+ * App Component
+ */
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -78,6 +80,9 @@ class App extends React.Component {
     }
 }
 
+/*
+ * Rendering
+ */
 const render = () => {
     
     const appElement = document.getElementById('app');
