@@ -11,7 +11,7 @@ class Counter extends React.Component {
 
 let mapStateToProps = (state) => {
     return {
-        value: state.counter
+        value: state.counter.value
     };
 }
 
